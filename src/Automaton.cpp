@@ -1,4 +1,4 @@
-#include "Automaton.hpp"
+#include "Automaton.h"
 #include <iomanip>
 using namespace std;
 

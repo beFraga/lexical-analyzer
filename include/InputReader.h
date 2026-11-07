@@ -1,7 +1,7 @@
-#ifndef INPUTREADER_HPP
-#define INPUTREADER_HPP
+#pragma once
 #include <string>
 #include <vector>
+#include <tuple>
 using namespace std;
 
 /* Como usar:
@@ -9,8 +9,7 @@ using namespace std;
 using namespace std;
 ...
     const string fileToRead = "fileToRead.txt";
-    InputReader reader;
-    vector<string> linesArray = reader.readFile(fileToRead);
+    vector<string> linesArray = InputReader::readFile(fileToRead);
 ...
 
 --- Retorna um array das linhas do arquivo de texto
@@ -18,9 +17,5 @@ using namespace std;
 
 class InputReader {
 public:
-    InputReader();
-
-    vector<string> readFile(const string & addressToRead);
+    static vector<tuple<string, string>> readFile(const string & addressToRead);
 };
-
-#endif

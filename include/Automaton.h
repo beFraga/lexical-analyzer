@@ -1,5 +1,4 @@
-#ifndef AUTOMATON_HPP
-#define AUTOMATON_HPP
+#pragma once
 #include <iostream>
 #include <string>
 #include <vector>
@@ -50,5 +49,3 @@ public:
     // visualizar tabela de transições
     void printTable();
 };
-
-#endif
